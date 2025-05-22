@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <title>Byte & Bite</title>
+        <style>
+            body {
+                background-color: #1f1f1f;
+                color: #1f1f1f;
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+            }
+
+            header, footer {
+                text-align: center;
+                padding: 20px;
+                background-color: #282828;
+                color: #00cccc;
+            }
+
+            nav ul {
+                list-style: none;
+                padding: 0;
+
+            }
+
+            nav li {
+                list-style: inline;
+                margin: 0 15px;
+            }
+
+            a {
+                color: #00ffff;
+                text-decoration: none;
+                font-weight: bold;
+
+            }
+
+            section#menu article {
+                background-color: #2b2b2b;
+                padding: 15px;
+                margin: 15px 0;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0,0,255,255,0.1);
+                color: #00cccc;
+            }
+            input, textarea{
+                margin-top: 8px;
+                margin-bottom: 16px;
+                padding: 5px;
+                border-radius: 5px;
+                border: none;
+            }
+
+            input[type="submit"]{
+                background-color: #00ffff;
+                color:#000;
+                font-weight: bold;
+                padding: 10px 20px;
+                cursor: pointer;
+                transition: background-color 0.3 ease;
+            }
+
+            input[type="submit"]:hover{
+                background-color: #00cccc;
+
+            }
+
+            section#order-form article{
+                background-color: #2b2b2b;
+                padding: 20px;
+                margin-top: 30px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(255,255,255, 0.05);
+                color: #00cccc;
+
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="images/header_bytebite2.png" id="header-img" alt="Byte and Bite restaurant interior"  style="width:100%; max-height:550px; object-fit:cover;">
+            <br><br>
+            <h1>Byte & Bite</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#order-form">Place Your Order</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="menu">
+                <article>
+                    <img src="images/cpp_cheesburger.jpg" alt="C++ cheesburger" width="300" id="cheesburger">
+                    <h3> C++ cheesburger </h3>
+                    <p>Two juicy patties, molten cheddar, crisp greens, and neon-fresh toppings built like a code masterpiece and grilled to perfection.</p>
+                    <p>price: <i><b>$9.99</b></i></p>
+
+                </article>
+                <article>
+                    <img src="images/kernel_fried_chicken.png" alt="Kernel Fried Chicken" width="300" id="kernel_fried_chicken">
+                    <h3>Kernel Fried Chicken</h3>
+                    <p>A golden crusted drumstick deep fried with flavor and optimized for max crunch straight from the command line to your plate.</p>
+                    <p>price:<i><b>$8.99</b></i></p>
+
+                </article>
+                <article>
+                    <img src="images/sancocho_7bit.png" alt="Sancocho 7-bite" width="300" id="sancocho_7bit">
+                    <h3> Sancocho 7-bite </h3>
+                    <p>A hearty Dominican stew loaded with 7 legendary ingredients root vegetables, meats, and spices — simmered like a legacy system: slow, rich, and always reliable.</p>
+                    <p>price:<i><b>$6.97</b></i></p>
+                </article>
+            </section> 
+            <br><br><br>
+            <section id="order-form">
+                <h2>Place Your Order</h2>
+                <article>
+                    <form>
+                        <label for="cheesburger"> <h2>C ++ Cheesburger:</h2></label>
+                        <input type="number" id="cheesburger" name="cheesburger_qty" min="0" max="99"  style="width: 30px ;">
+                        <br>
+                        <h4><b>Add</b></h4>
+                        <input type="checkbox" id="bacon" name="cheesburger_add" value="bacon"> Bacon
+                        <input type="checkbox" id="salt1" name="cheesburger_add" value="salt"> Salt
+                        <input type="checkbox" id="tomato" name="cheesburger_add" value="tomato"> Tomato
+                        <br>
+                        <h4><b>Sides</b></h4>
+                        <input type="radio" id="fries1" name="cheesburger_sides" value="fries"> Fries
+                        <input type="radio" id="onion-rings1" name="cheesburger_sides" value="onion-rings">onion-rings
+                        <br><br><br>
+
+                        <label for="kernel_fried_chicken"> <h2>Kernel Fried Chicken:</h2></label>
+                        <input type="number" id="kernel_fried_chicken" name="chicken_qty" min="0" max="99"  style="width: 30px ;">
+                        <br>
+                        <h4><b>Add</b></h4>
+                        <input type="checkbox" id="spice" name="chicken_add" value="spice"> Spice
+                        <input type="checkbox" id="salt2" name="chicken_add" value="salt"> Salt
+                        <input type="checkbox" id="lemon_sauce" name="chicken_add" value="lemon_sauce"> Lemon sauce
+                        <br>
+                        <h4><b>Sides</b></h4>
+                        <input type="radio" id="fries2" name="chicken_sides" value="fries"> Fries
+                        <input type="radio" id="onion-rings2" name="chicken_sides" value="onion-rings">onion-rings
+                        <br><br><br>
+
+                        <label for="sancocho_7bit"> <h2> Sancocho 7 - Bit: </h2></label>
+                        <input type="number" id="sancocho_7bit" name="sancocho_qty" min="0" max="99"  style="width: 30px ;">
+                        <br>
+                        <h4><b>Add</b></h4>
+                        <input type="checkbox" id="lemon" name="sancocho_add" value="lemon"> Lemon
+                        <input type="checkbox" id="salt3" name="sancocho_add" value="salt"> Salt 
+                        <br>
+                        <h4><b>Sides</b></h4>
+                        <input type="radio" id="white_rice" name="sancocho_sides" value="white_rice"> White Rice
+                        <input type="radio" id="tostones" name="sancocho_sides" value="tostones">Tostones
+                        <br><br>
+                        <br><br>
+                        <label for="special-request"><b>Special Request</b></label><br>
+                        <textarea id="special-request" name="special-request" rows="4" cols="50" placeholder="No onions, extra sauce, add secret sauce... "></textarea>
+                        <br><br><br>
+                        <input type="submit" value="Go to Checkout">
+
+                    
+                        
+                    </form>
+
+                </article>
+            </section>
+        </main> 
+        <footer><p>Made with love by Ghossty</p></footer>   
+    </body>
+</html>
