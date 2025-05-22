@@ -7,4 +7,4 @@ A tech-themed restaurant menu built as the final project for the HTML course on 
 - Styled layout with custom theme
 - Interactive form with add-ons, sides, and special requests
 
-💖 Made with love by ghossty
+👻👻 Made with love by ghossty
